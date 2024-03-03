@@ -6,26 +6,23 @@ In an age of information overload, real-time analysis of news sentiment is inval
 
 ![Screenshot (2)](https://github.com/19gcarpio/BingAnalytics/assets/92619560/e5303e90-96c5-423f-8783-8656b7a9cf07)
 
-**Azure Environmental Setup:**
-The project begins with the establishment of an Azure environment, leveraging Azure services such as Azure Virtual Machines, Azure Databricks, Azure Data Factory, Azure Blob Storage, and Azure Machine Learning. This setup provides a scalable and flexible infrastructure for deploying the entire data pipeline and machine learning models.
+**1. Data Ingestion from Bing API using Data Factory:**
+The analytics endeavor commences with the systematic extraction of data from external sources, facilitated by Azure Data Factory. Through the utilization of Data Factory, a seamless retrieval process ensues from the Bing API, establishing a robust cornerstone for subsequent analytical processes.
 
-**Data Ingestion:**
-Raw data from various sources, such as social media feeds, customer reviews, or sensor data, is ingested into the Azure environment. Azure Data Factory is utilized for orchestrating data pipelines, allowing for efficient and automated extraction of data from different sources.
+**2. Data Transformation using Synapse Data Engineering:**
+Embarking on the process of data refinement, Synapse Data Engineering meticulously shapes raw JSON data into curated Delta Tables. Techniques such as incremental loading are employed to uphold process efficiency and ensure the generation of high-quality data outputs.
 
-**Data Transformation:**
-Once the data is ingested, it undergoes transformation processes to clean, preprocess, and prepare it for analysis. Azure Databricks, with its Apache Spark-based processing capabilities, is employed for this purpose. Data transformation tasks include data normalization, feature engineering, and handling missing values.
+**3. Sentiment Analysis using Synapse Data Science:**
+Leveraging the advanced capabilities of Synapse Data Science, sentiment analysis uncovers valuable insights from news descriptions. By accurately predicting sentiment classifications of news articles as Positive, Negative, or Neutral, this analysis provides actionable intelligence.
 
-**Data Storage:**
-Processed data is stored in Azure Blob Storage or Azure Data Lake Storage for efficient storage and retrieval. These storage solutions offer scalability, security, and integration with other Azure services.
+**4. Orchestration using Data Factory via pipelines:**
+Mastering the orchestration of data workflows, Azure Data Factory pipelines ensure seamless operational flow. Through meticulous scheduling and management of data movement and processing tasks, operational efficiency is optimized.
 
-**Sentiment Analysis with Machine Learning:**
-Machine learning models are developed and trained for sentiment analysis using Azure Machine Learning. Natural Language Processing (NLP) techniques are applied to analyze text data and determine sentiment polarity (positive, negative, neutral). Azure ML provides capabilities for model training, hyperparameter tuning, and model deployment.
+**5. Data Reporting using Power BI:**
+Empowering stakeholders with actionable insights, Power BI visually represents curated data. Crafted interactive reports and dashboards deliver compelling visualizations, facilitating informed decision-making processes.
 
-**Interactive Power BI Dashboard:**
-The insights derived from sentiment analysis are visualized through an interactive Power BI dashboard. Power BI connects directly to the Azure data sources, enabling real-time or scheduled updates of visualizations. The dashboard includes various visual elements such as charts, graphs, and maps to present sentiment trends and patterns in an intuitive manner.
+**6. Configuring Alerts using the Data Activator:**
+Demonstrating proactive vigilance, alerts and notifications are configured within Power BI visuals using the innovative Data Activator tool. Vigilant monitoring of key metrics and prompt addressing of anomalies upholds data integrity and ensures analytical efficacy.
 
-**Orchestration:**
-Azure Data Factory serves as the orchestrator for the entire data pipeline, coordinating data workflows, scheduling tasks, and monitoring pipeline performance. It ensures seamless execution of data ingestion, transformation, model training, and deployment processes.
-
-**Testing and Validation:**
-Testing and validation are crucial stages to ensure the accuracy and reliability of the entire data pipeline and machine learning models. Azure provides testing frameworks and services such as Azure DevOps for continuous integration and continuous deployment (CI/CD), Azure Monitor for monitoring pipeline performance, and Azure Databricks for testing model performance and accuracy against validation datasets. Comprehensive testing ensures that the deployed solution meets the required quality standards and delivers accurate sentiment analysis results.
+**7. End to End Pipeline Testing:**
+Comprehensive validation procedures meticulously test the integrity and performance of pipelines. From data ingestion through transformation to reporting, rigorous testing protocols affirm the reliability and accuracy of analytical outputs.
