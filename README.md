@@ -6,7 +6,7 @@ In an age of information overload, real-time analysis of news sentiment is inval
 
 ![Screenshot (2)](https://github.com/19gcarpio/BingAnalytics/assets/92619560/e5303e90-96c5-423f-8783-8656b7a9cf07)
 
-**Project Overview:**
+*Project Overview:*
 
 **1. Data Ingestion from Bing API using Data Factory:**
 The analytics endeavor commences with the systematic extraction of data from external sources, facilitated by Azure Data Factory. Through the utilization of Data Factory, a seamless retrieval process ensues from the Bing API, establishing a robust cornerstone for subsequent analytical processes.
